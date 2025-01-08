@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Tutorial</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav id="navbar">
+        <header>HTML Tutorial</header>
+        <ul>
+            <li>
+                <a href="#HTML_Introduction" class="nav-link">HTML Introduction</a>
+            </li>
+            <li>
+                <a href="#HTML_Editors" class="nav-link">HTML Editors</a>
+            </li>
+            <li>
+                <a href="#HTML_Elements" class="nav-link">HTML Elements</a>
+            </li>
+            <li>
+                <a href="#HTML_Attributes" class="nav-link">HTML Attributes</a>
+            </li>
+            <li>
+                <a href="#HTML_Headings" class="nav-link">HTML Headings</a>
+            </li>
+            <li>
+                <a href="#HTML_Paragraphs" class="nav-link">HTML Paragraphs</a>
+            </li>
+            <li>
+                <a href="#References" class="nav-link">References</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main id="main-doc">
+        <section class="main-section" id="HTML_Introduction">
+            <header>HTML Introduction</header>
+            <article>
+                <p>HTML is the standard markup language for creating Web pages.</p>
+                <h2>What is HTML?</h2>
+                <ul>
+                    <li>HTML stands for Hyper Text Markup Language</li>
+                    <li>HTML is the standard markup language for creating Web pages</li>
+                    <li>HTML describes the structure of a Web page</li>
+                    <li>HTML consists of a series of elements</li>
+                    <li>HTML elements tell the browser how to display the content</li>
+                    <li>HTML elements label pieces of content such as "this is a heading", "this is a paragraph", "this is a link", etc.</li>
+                </ul>
+            </article>
+        </section>
+
+        <section class="main-section" id="HTML_Editors">
+            <header>HTML Editors</header>
+            <article>
+                <p>A simple text editor is all you need to learn HTML.</p>
+                <h2>Learn HTML Using Notepad or TextEdit</h2>
+                <p>Web pages can be created and modified by using professional HTML editors.</p>
+                <p>However, for learning HTML we recommend a simple text editor like Notepad (PC) or TextEdit (Mac).</p>
+                <p>We believe that using a simple text editor is a good way to learn HTML.</p>
+                
+                <p>Follow the steps below to create your first web page with Notepad or TextEdit.</p>
+                <h3>Step 1: Open Notepad</h3>
+                <p>Open the <strong>Start Screen</strong> (the window symbol at the bottom left on your screen). Type <strong>Notepad</strong>.</p>
+                <p><strong>Then open a new document to place the code.</strong></p>
+                
+                <h3>Step 2: Write Some HTML</h3>
+                <p>Write or copy the following HTML code into Notepad:</p>
+                <img src="https://www.w3schools.com/html/img_notepad.png" alt="html-code-example">
+                
+                <h3>Step 3: Save the HTML Page</h3>
+                <p>Save the file on your computer. Select File > Save as in the Notepad menu.</p>
+                <p>Name the file <strong>"index.htm"</strong> and set the encoding to <strong>UTF-8</strong> (which is the preferred encoding for HTML files).</p>
+                <img src="https://www.w3schools.com/html/img_saveas.png" alt="save-html-file">
+                
+                <h3>Step 4: View the HTML Page in Your Browser</h3>
+                <p>Open the saved HTML file in your favorite browser (double click on the file, or right-click - and choose "Open with").</p>
+                <p>The result will look much like this:</p>
+                <img src="https://www.w3schools.com/html/img_chrome.png" alt="result-html">
+            </article>
+        </section>
+
+        <section class="main-section" id="HTML_Elements">
+            <header>HTML Elements</header>
+            <article>
+                <p>An HTML element is defined by a start tag, some content, and an end tag.</p>
+                <p>The HTML element is everything from the start tag to the end tag:</p>
+                <div class="code">
+                    <code>
+                        &lt;<span class="name-tag">tagname</span>&gt;<span class="content-tag">Content goes here...</span><span class="close-tag">&lt;<span class="name-tag">/tagname</span>&gt;
+                    </code>
+                </div>
+                <p>Examples of some HTML elements:</p>
+                <div class="code">
+                    <code>
+                        &lt;<span class="name-tag">h1</span>&gt;<span class="content-tag">My First Heading</span><span class="close-tag">&lt;<span class="name-tag">/h1</span>&gt;
+                        <br>
+                        &lt;<span class="name-tag">p</span>&gt;<span class="content-tag">My first paragraph.</span><span class="close-tag">&lt;<span class="name-tag">/p</span>&gt;
+                    </code>
+                </div>
+                
+                <h3>Nested HTML Elements</h3>
+                <p>HTML elements can be nested (this means that elements can contain other elements).</p>
+                <p>All HTML documents consist of nested HTML elements.</p>
+                <p>The following example contains four HTML elements ( <span class="element-name">&lt;html&gt;</span>, <span class="element-name">&lt;body&gt;</span>, <span class="element-name">&lt;h1&gt;</span> and <span class="element-name">&lt;p&gt;</span> ):</p>
+                
+                <h3>Example</h3>
+                <div class="code">
+                    <code>
+                        &lt;<span class="name-tag">!DOCTYPE</span> <span class="element-name">html</span>&gt;
+                        <br>
+                        &lt;<span class="name-tag">html</span>&gt;
+                        <br>
+                        &lt;<span class="name-tag">body</span>&gt;
+                        <br>
+                        <br>
+                        &lt;<span class="name-tag">h1</span>&gt;<span class="content-tag">My First Heading</span><span class="close-tag">&lt;<span class="name-tag">/h1</span>&gt;
+                        <br>
+                        &lt;<span class="name-tag">p</span>&gt;<span class="content-tag">My first paragraph.</span><span class="close-tag">&lt;<span class="name-tag">/p</span>&gt;
+                        <br>
+                        <br>
+                        &lt;<span class="name-tag">/body</span>&gt;
+                        <br>
+                        &lt;<span class="name-tag">/html</span>&gt;
+                    </code>
+                </div>
+                
+                <h3>Example Explained</h3>
+                <p>The <span class="element-name">&lt;html&gt;</span> element is the root element and it defines the whole HTML document.</p>
+                <p>It has a start tag <span class="element-name">&lt;html&gt;</span> and an end tag <span class="element-name">&lt;/html&gt;</span>.</p>
+                <p>Then, inside the <span class="element-name">&lt;html&gt;</span> element there is a <span class="element-name">&lt;body&gt;</span> element:</p>
+                <div class="code">
+                    <code>
+                        &lt;<span class="name-tag">body</span>&gt;
+                        <br>
+                        <br>
+                        &lt;<span class="name-tag">h1</span>&gt;<span class="content-tag">My First Heading</span><span class="close-tag">&lt;<span class="name-tag">/h1</span>&gt;
+                        <br>
+                        &lt;<span class="name-tag">p</span>&gt;<span class="content-tag">My first paragraph.</span><span class="close-tag">&lt;<span class="name-tag">/p</span>&gt;
+                        <br>
+                        <br>
+                        &lt;<span class="name-tag">/body</span>&gt;
+                    </code>
+                </div>
+                <p>The <span class="element-name">&lt;body&gt;</span> element defines the document's body.</p>
+                <p>It has a start tag <span class="element-name">&lt;body&gt;</span> and an end tag <span class="element-name">&lt;/body&gt;</span>.</p>
+                <p>Then, inside the <span class="element-name">&lt;body&gt;</span> element there are two other elements: <span class="element-name">&lt;h1&gt;</span> and <span class="element-name">&lt;p&gt;</span>:</p>
+                
+            </article>
+        </section>
+
+        <section class="main-section" id="HTML_Attributes">
+            <header>HTML Attributes</header>
+            <article>
+                <p>HTML attributes provide additional information about HTML elements.</p>
+                
+                <h3>HTML Attributes</h3>
+                <ul>
+                    <li>All HTML elements can have <strong>attributes</strong></li>
+                    <li>Attributes provide <strong>additional information</strong> about elements</li>
+                    <li>Attributes are always specified in <strong>the start tag</strong></li>
+                    <li>Attributes usually come in name/value pairs like: <strong>name="value"</strong></li>
+                </ul>
+                
+                <h3>The href Attribute</h3>
+                <p>The <span class="element-name">&lt;a&gt;</span> tag defines a hyperlink. The <span class="element-name">&lt;href&gt;</span> attribute specifies the URL of the page the link goes to:</p>
+                <div class="code">
+                    <code>
+                        &lt;<span class="name-tag">a <span class="element-name">href</span></span>="https://www.w3schools.com"&gt;<span class="content-tag">Visit W3Schools</span><span class="close-tag">&lt;<span class="name-tag">/a</span>&gt;
+                    </code>
+                </div>
+
+                <h3>The src Attribute</h3>
+                <p>The <span class="element-name">&lt;img&gt;</span> tag is used to embed an image in an HTML page. The src attribute specifies the path to the image to be displayed:</p>
+                <div class="code">
+                    <code>
+                        &lt;<span class="name-tag">img <span class="element-name">src</span></span>="img_girl.jpg"&gt;
+                    </code>
+                </div>
+
+                <h3>The width and height Attributes</h3>
+                <p>The <span class="element-name">&lt;img&gt;</span> tag should also contain the <span class="element-name">width</span> and <span class="element-name">height</span> attributes, which specify the width and height of the image (in pixels):</p>
+                <div class="code">
+                    <code>
+                        &lt;<span class="name-tag">img <span class="element-name">src</span></span>="img_girl.jpg" <span class="element-name">width</span>="500" <span class="element-name">height</span>="600"&gt;
+                    </code>
+                </div>
+            </article>
+        </section>
+        
+        <section class="main-section" id="HTML_Headings">
+            <header>HTML Headings</header>
+            <article>
+                <p>HTML headings are titles or subtitles that you want to display on a webpage.</p>
+                <p>HTML headings are defined with the <span class="element-name">&lt;h1&gt;</span> to <span class="element-name">&lt;h6&gt;</span> tags.</p>
+                <p><span class="element-name">&lt;h1&gt;</span> defines the most important heading. <span class="element-name">&lt;h6&gt;</span> defines the least important heading.</p>
+
+                <h3>Example</h3>
+                <div class="code">
+                    <code>
+                        &lt;<span class="name-tag">h1</span>&gt;<span class="content-tag">Heading 1</span><span class="close-tag">&lt;<span class="name-tag">/h1</span>&gt;
+                        <br>
+                        &lt;<span class="name-tag">h2</span>&gt;<span class="content-tag">Heading 2</span><span class="close-tag">&lt;<span class="name-tag">/h2</span>&gt;
+                        <br>
+                        &lt;<span class="name-tag">h3</span>&gt;<span class="content-tag">Heading 3</span><span class="close-tag">&lt;<span class="name-tag">/h3</span>&gt;
+                        <br>
+                        ...
+                        <br>
+                        &lt;<span class="name-tag">h6</span>&gt;<span class="content-tag">Heading 6</span><span class="close-tag">&lt;<span class="name-tag">/h6</span>&gt;
+                    </code>
+                </div>
+
+                <h3>Headings Are Important</h3>
+                <p>Search engines use the headings to index the structure and content of your web pages.</p>
+                <p>Users often skim a page by its headings. It is important to use headings to show the document structure.</p>
+                <p><span class="element-name">&lt;h1&gt;</span> headings should be used for main headings, followed by <span class="element-name">&lt;h2&gt;</span> headings, then the less important <span class="element-name">&lt;h3&gt;</span>, and so on.</p>
+            </article>
+        </section>
+        
+        <section class="main-section" id="HTML_Paragraphs">
+            <header>HTML Paragraphs</header>
+            <article>
+                <p>A paragraph always starts on a new line, and is usually a block of text.</p>
+                <p>The HTML <span class="element-name">&lt;p&gt;</span> element defines a paragraph.</p>
+                <p>A paragraph always starts on a new line, and browsers automatically add some white space (a margin) before and after a paragraph.</p>
+
+                <h3>Example</h3>
+                <div class="code">
+                    <code>
+                        &lt;<span class="name-tag">p</span>&gt;<span class="content-tag">This is a paragraph.</span><span class="close-tag">&lt;<span class="name-tag">/p</span>&gt;
+                        <br>
+                        &lt;<span class="name-tag">p</span>&gt;<span class="content-tag">This is another paragraph.</span><span class="close-tag">&lt;<span class="name-tag">/p</span>&gt;
+                        <br>
+                    </code>
+                </div>
+
+                <h3>HTML Display</h3>
+                <p>You cannot be sure how HTML will be displayed.</p>
+                <p>Large or small screens, and resized windows will create different results.</p>
+                <p>With HTML, you cannot change the display by adding extra spaces or extra lines in your HTML code.</p>
+                <p>The browser will automatically remove any extra spaces and lines when the page is displayed.</p>
+
+                <h3>HTML Horizontal Rules</h3>
+                <p>The <span class="element-name">&lt;hr&gt;</span> tag defines a thematic break in an HTML page, and is most often displayed as a horizontal rule.</p>
+                <p>The <span class="element-name">&lt;hr&gt;</span> element is used to separate content (or define a change) in an HTML page:</p>
+
+                <h3>Example</h3>
+                <div class="code">
+                    <code>
+                        &lt;<span class="name-tag">h1</span>&gt;<span class="content-tag">This is heading 1</span><span class="close-tag">&lt;<span class="name-tag">/h1</span>&gt;
+                        <br>
+                        &lt;<span class="name-tag">p</span>&gt;<span class="content-tag">This is some text.</span><span class="close-tag">&lt;<span class="name-tag">/p</span>&gt;
+                        <br>
+                        &lt;<span class="name-tag">hr</span>&gt;
+                        <br>
+                        &lt;<span class="name-tag">h2</span>&gt;<span class="content-tag">This is heading 2</span><span class="close-tag">&lt;<span class="name-tag">/h2</span>&gt;
+                        <br>
+                        &lt;<span class="name-tag">p</span>&gt;<span class="content-tag">This is some other text.</span><span class="close-tag">&lt;<span class="name-tag">/p</span>&gt;
+                        <br>
+                        &lt;<span class="name-tag">hr</span>&gt;
+                    </code>
+                </div>
+            </article>
+        </section>
+
+        <section class="main-section" id="References">
+            <header>References</header>
+            <article>See full tutorial on <a href="" class="source">W3Schools</a></article>
+        </section>
+    </main>
+</body>
+</html>

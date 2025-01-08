@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthy Lifestyle Survey</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 id="title">Healthy Lifestyle Survey</h1>
+            <p id="description">Help us understand your health and fitness habits by completing this short survey.</p>
+        </header>
+        <form action="" method="POST" id="survey-form">
+            <div class="form-group">
+                <label id="name-label" for="name">What is your full name?</label>
+                <input type="text" id="name" name="name" required placeholder="Enter your full name">
+            </div>
+            <div class="form-group">
+                <label id="number-label" for="number">What is your age?</label>
+                <input type="number" id="number" name="age" min="10" max="100" placeholder="Enter your age">
+            </div>
+            <div class="form-group">
+                <label id="email-label" for="email">Your email</label>
+                <input type="email" id="email" name="email" required placeholder="Enter your email">
+            </div>
+            <div class="form-group">
+                <label for="dropdown">How many hours do you sleep per night?</label>
+                <select id="dropdown" name="sleep_duration">
+                    <option disabled selected>Select a duration</option>
+                    <option>Less than 5 hours</option>
+                    <option>5-6 hours</option>
+                    <option>7-8 hours</option>
+                    <option>More than 8 hours</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>How would you describe your current health?</label>
+                <div class="inline-group">
+                    <label for="excellent"><input type="radio" class="inline" id="excellent" name="health" value="excellent"> Excellent</label>
+                    <label for="good"><input type="radio" class="inline" id="good" name="health" value="good"> Good</label>
+                    <label for="fair"><input type="radio" class="inline" id="fair" name="health" value="fair"> Fair</label>
+                    <label for="poor"><input type="radio" class="inline" id="poor" name="health" value="poor"> Poor</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>What types of exercise do you enjoy?</label>
+                <div class="inline-group">
+                    <label for="running"><input type="checkbox" name="exercise" class="inline" id="running" value="running"> Running</label>
+                    <label for="weightlifting"><input type="checkbox" name="exercise" class="inline" id="weightlifting" value="weightlifting"> Weightlifting</label>
+                    <label for="yoga"><input type="checkbox" name="exercise" class="inline" id="yoga" value="yoga"> Yoga</label>
+                    <label for="swimming"><input type="checkbox" name="exercise" class="inline" id="swimming" value="swimming"> Swimming</label>
+                    <label for="cycling"><input type="checkbox" name="exercise" class="inline" id="cycling" value="cycling"> Cycling</label>
+                    <label for="team-sport"><input type="checkbox" name="exercise" class="inline" id="team-sport" value="team-sport"> Team Sports</label>
+                    <label for="walking"><input type="checkbox" name="exercise" class="inline" id="walking" value="walking"> Walking</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="feedback">Do you have any suggestions or feedback for improving fitness programs?</label>
+                <textarea id="feedback" name="feedback" placeholder="Share your suggestions or feedback here..." rows="3"></textarea>
+            </div>
+            <div class="form-group">
+                <input type="submit" id="submit" value="Send Survey">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
